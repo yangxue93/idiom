@@ -1,5 +1,5 @@
 {
-    "name": "yangxue93/game",
+    "name": "yangxue93/idiom",
     "description": "game",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yangxue93\\Game\\": "src/"
+            "Yangxue93\\Idiom\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Yangxue93\\Game\\LoopServiceProvider"
+                "Yangxue93\\Idiom\\IdiomServiceProvider"
             ]
 
         }

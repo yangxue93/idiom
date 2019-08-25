@@ -1,6 +1,6 @@
 <?php
 
-namespace Yangxue93\Loop\Console;
+namespace Yangxue93\Idiom\Console;
 
 use Illuminate\Console\Command;
 
@@ -11,7 +11,7 @@ class PublishCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'loop:publish {--force}';
+    protected $signature = 'idiom:publish {--force}';
 
     /**
      * The console command description.
@@ -28,7 +28,7 @@ class PublishCommand extends Command
     public function handle()
     {
         $force = $this->option('force');
-        $options = ['--provider' => 'Liubingzhe\Loop\LoopServiceProvider'];
+        $options = ['--provider' => 'Yangxue93\Idiom\IdiomServiceProvider'];
         if ($force == true) {
             $options['--force'] = true;
         }
