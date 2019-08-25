@@ -51,9 +51,9 @@ class InstallCommand extends Command
 
         $userModel = config('idiom.database.rd_cyjl');
 
-        if ($userModel::count() == 0) {
+        /*if ($userModel::count() == 0) {
             $this->call('db:seed', ['--class' => \Encore\Admin\Auth\Database\AdminTablesSeeder::class]);
-        }
+        }*/
     }
 
     /**
@@ -102,7 +102,7 @@ class InstallCommand extends Command
     protected function createRoutesFile()
     {
 
-        $file = base_path('routes'.DIRECTORY_SEPARATOR.'loop_routes.php');
+        $file = base_path('routes'.DIRECTORY_SEPARATOR.'idiom.php');
 
         $contents = $this->getStub('routes');
         $this->laravel['files']->put($file, str_replace('myNamespace', config('loop.route.namespace'), $contents));

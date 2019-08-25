@@ -41,6 +41,6 @@ class CreateIdiomTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('idiom.database.rd_cyjl_tableyu7777'));
+        Schema::dropIfExists(config('idiom.database.rd_cyjl_table'));
     }
 }
