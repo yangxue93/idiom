@@ -1,0 +1,17 @@
+<?php
+
+namespace myNamespace;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use function Psy\bin;
+
+class IdiomController
+{
+    public function test(){
+        echo 'game packages';die;
+    }
+
+
+}

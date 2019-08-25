@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Routing\Router;
+
+
+Route::group([
+    'prefix'        => config('idiom.route.prefix'),
+    'namespace'     => config('idiom.route.namespace'),
+    'middleware'    => config('idiom.route.middleware'),
+], function (Router $router) {
+
+    $router->get('/a', function () {
+        return 'idiom';
+    });
+    $router->get('/', 'API\Idiom\IdiomController@test');
+
+
+});
